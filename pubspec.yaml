@@ -1,0 +1,9 @@
+name: dart_code_metrics_annotations
+version: 1.0.0
+description: Annotations for DCM.
+repository: https://github.com/CQLabs/dart-code-metrics-annotations.git
+topics:
+  - static-analysis
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
