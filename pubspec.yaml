@@ -1,5 +1,5 @@
 name: dart_code_metrics_annotations
-version: 1.1.0
+version: 1.2.0
 description: Annotations for DCM.
 repository: https://github.com/CQLabs/dart-code-metrics-annotations.git
 topics:
