@@ -82,3 +82,22 @@ class AcceptedTypes {
   /// that have an `Object` type, but should only receive a known subset of types.
   const AcceptedTypes(this.types);
 }
+
+/// Used to annotate parameters or variables that are changed/updated within the function/method body.
+///
+/// The intention of this annotation is to help quickly identify which
+/// parameters or variables are being mutated.
+///
+/// For example, the `avoid-collection-mutating-methods` and `avoid-mutating-parameters`
+/// rules will not trigger on annotated parameters and `avoid-not-assignable-collection-types`
+/// will include such parameters into its analysis.
+///
+/// DCM will provide feedback if the `@mutated` annotation is missing or unnecessary.
+///
+/// For more information, see the documentation for "prefer-correct-mutated" and other rules
+/// mentioned above.
+const _IsMutated mutated = _IsMutated();
+
+class _IsMutated {
+  const _IsMutated();
+}
