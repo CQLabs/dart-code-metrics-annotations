@@ -59,16 +59,16 @@ class Throws {
 /// void fn() {
 ///  fn(1); // LINT
 ///  SomeClass(false); // LINT
-///}
+/// }
 ///
-///void fn(@AcceptedTypes({String, bool}) Object value) {}
+/// void fn(@AcceptedTypes({String, bool}) Object value) {}
 ///
-///class SomeClass {
+/// class SomeClass {
 ///  @AcceptedTypes({String, int})
 ///  final Object field;
 ///
 ///  const SomeClass(this.field);
-///}
+/// }
 /// ```
 ///
 /// DCM will provide feedback if an invocation receives an argument that does not match the type listed in the `@AcceptedTypes()`.
